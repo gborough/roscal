@@ -1,7 +1,7 @@
 [![CI](https://github.com/gborough/roscal/actions/workflows/ci.yml/badge.svg)](https://github.com/gborough/roscal/actions/workflows/ci.yml)
 [![Crates.io][crates-badge]][crates-url]
 
-[crates-badge]: https://img.shields.io/crates/v/oscal_lib.svg
+[crates-badge]: https://img.shields.io/crates/v/roscal_lib.svg
 [crates-url]: https://crates.io/crates/roscal_lib
 # roscal: Open Security Controls Assessment Language Toolbox
 
@@ -49,8 +49,11 @@ validation etc.
 Latest CLI Tool Releases:
 
 Apple Silicon macOS: https://github.com/gborough/roscal/releases/download/v0.1.0/roscal_cli-aarch64-apple-darwin.tar.xz
+
 Intel macOS: https://github.com/gborough/roscal/releases/download/v0.1.0/roscal_cli-x86_64-apple-darwin.tar.xz
+
 x64 Linux: https://github.com/gborough/roscal/releases/download/v0.1.0/roscal_cli-x86_64-unknown-linux-gnu.tar.xz
+
 Windows: https://github.com/gborough/roscal/releases/download/v0.1.0/roscal_cli-x86_64-pc-windows-gnu.tar.xz
 
 ## CLI User Manual

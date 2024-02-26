@@ -213,7 +213,7 @@ Example of building a minimal Catalog model:
 
 ```toml
 [dependencies]
-roscal = "0.1.0"
+roscal_cli = "0.1.0"
 uuid = { version = "1.6.1", features = ["v4"] }
 chrono = { version = "0.4.31", features = ["serde"] }
 ```

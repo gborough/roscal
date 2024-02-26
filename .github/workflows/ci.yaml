@@ -1,0 +1,123 @@
+name: CI
+
+run-name: "CI run '${{ github.head_ref || github.ref_name }}'"
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+
+concurrency:
+  group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  format:
+    name: Cargo format
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Install toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.76.0
+          components: rustfmt
+
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+
+      - name: Check format
+        run: cargo fmt --all
+
+  security-check:
+    name: Security check
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Install toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.76.0
+          components: rustfmt
+
+      - name: Checkout sources
+        uses: actions/checkout@v4
+
+      - name: Install cargo-deny
+        run: cargo install cargo-deny --locked
+
+      - name: Install cargo-vet
+        run: cargo install cargo-vet --locked
+
+      - name: Run cargo deny
+        run: cargo deny check
+
+      - name: Run cargo vet
+        run: cargo vet init && cargo vet
+
+      - name: Report failure
+        if: failure()
+        run: |
+          echo "## Security Check Failed" >> $GITHUB_STEP_SUMMARY
+
+  clippy:
+    name: Check clippy
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Install toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.76.0
+          components: clippy
+
+      - name: Checkout sources
+        uses: actions/checkout@v4
+
+      - name: Setup cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install npm
+          npm install -g quicktype
+
+      - name: Run clippy
+        run: cargo clippy -- -D warnings
+
+  build-test:
+    name: Cargo test
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Install stable toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.76.0
+
+      - name: Checkout sources
+        uses: actions/checkout@v4
+
+      - name: Setup cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install npm
+          npm install -g quicktype
+
+      - name: Run test
+        run: cargo test

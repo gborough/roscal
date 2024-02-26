@@ -1,0 +1,39 @@
+[package]
+name = "roscal_lib"
+version = "0.1.0"
+edition = "2021"
+authors = ["Geoffrey Borough <geoffrey.borough@outlook.com>"]
+readme = "README.md"
+homepage = "https://github.com/gborough/roscal"
+repository = "https://github.com/gborough/roscal"
+description = """
+Open Security Controls Assessment Language In Rust
+"""
+license = "MIT OR Apache-2.0"
+keywords = ["OSCAL", "cybersecurity"]
+categories = ["api-bindings", "encoding"]
+publish = ["crates-io"]
+
+[dependencies]
+chrono = { version = "0.4.34", features = ["serde"] }
+derivative = "2.2.0"
+derive_builder = "0.20.0"
+lazy_static = "1.4.0"
+pulldown-cmark = "0.10.0"
+regex = "1.10.2"
+serde = { version = "1.0.197", features = ["derive"] }
+strum = { version = "0.26.1", features = ["derive"] }
+uriparse = "0.6.4"
+uuid = { version = "1.6.1", features = ["v4", "v5", "fast-rng", "serde"] }
+
+[dev-dependencies]
+serde_json = "1.0.114"
+serde_yaml = "0.9.32"
+
+[build-dependencies]
+json-schema-diff = "0.1.7"
+prettyplease = "0.2.16"
+proc-macro2 = "1.0.78"
+serde_json = "1.0.114"
+syn = {version = "2.0.50", features = ["full"]}
+quote = "1.0.35"

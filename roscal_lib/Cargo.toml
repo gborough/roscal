@@ -13,6 +13,7 @@ license = "MIT OR Apache-2.0"
 keywords = ["OSCAL", "cybersecurity"]
 categories = ["api-bindings", "encoding"]
 publish = ["crates-io"]
+exclude = ["jsonschema/", "build.rs"]
 
 [dependencies]
 chrono = { version = "0.4.34", features = ["serde"] }

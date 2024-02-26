@@ -850,7 +850,7 @@ dependencies = [
  "clap",
  "iana-time-zone",
  "rand",
- "roscal_lib",
+ "roscal_lib 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
  "serde_json",
  "serde_yaml",
@@ -879,6 +879,30 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_yaml",
+ "strum",
+ "syn 2.0.50",
+ "uriparse",
+ "uuid",
+]
+
+[[package]]
+name = "roscal_lib"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9c1caf1b7cafff5ea0cf0fa15648dda0288d79fadeafd6c53dd8a19a7d95e95b"
+dependencies = [
+ "chrono",
+ "derivative",
+ "derive_builder",
+ "json-schema-diff",
+ "lazy_static",
+ "prettyplease",
+ "proc-macro2",
+ "pulldown-cmark",
+ "quote",
+ "regex",
+ "serde",
+ "serde_json",
  "strum",
  "syn 2.0.50",
  "uriparse",

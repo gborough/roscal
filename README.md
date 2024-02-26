@@ -1,4 +1,4 @@
-[![CI](https://github.com/gborough/roscal/actions/workflows/ci.yml/badge.svg)](https://github.com/gborough/roscal/actions/workflows/ci.yml)
+[![CI](https://github.com/gborough/roscal/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/gborough/roscal/actions/workflows/ci.yaml)
 [![Crates.io][crates-badge]][crates-url]
 
 [crates-badge]: https://img.shields.io/crates/v/roscal_lib.svg

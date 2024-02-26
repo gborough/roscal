@@ -38,7 +38,7 @@ The first iteration of this project contains two major components:
 
 - roscal_lib: A library with referential implementation of the OSCAL models, which
 aims to always track the latest OSCAL standard and primarily support roscal_cli
-and the building of OSCAL modela programmatically in Rust.
+and the building of OSCAL models programmatically in Rust.
 
 - roscal_cli: A command line tool for OSCAL model file manipulation, including
 but not limited to model file dissection, inspection, editing, merging and

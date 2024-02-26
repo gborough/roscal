@@ -4,12 +4,4 @@ Changelog
 
 ### Changed
 
-- Updalte cargo exclude list
-
-- Initial commit (#1)
-
-* initial commit
-
-* initial commit
 - Initial commit
-

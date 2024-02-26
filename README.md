@@ -1,3 +1,8 @@
+[![CI](https://github.com/gborough/roscal/actions/workflows/ci.yml/badge.svg)](https://github.com/gborough/roscal/actions/workflows/ci.yml)
+[![Crates.io][crates-badge]][crates-url]
+
+[crates-badge]: https://img.shields.io/crates/v/oscal_lib.svg
+[crates-url]: https://crates.io/crates/roscal_lib
 # roscal: Open Security Controls Assessment Language Toolbox
 
 ## Introduction
@@ -42,6 +47,11 @@ validation etc.
 ## Downloads
 
 Latest CLI Tool Releases:
+
+Apple Silicon macOS: https://github.com/gborough/roscal/releases/download/v0.1.0/roscal_cli-aarch64-apple-darwin.tar.xz
+Intel macOS: https://github.com/gborough/roscal/releases/download/v0.1.0/roscal_cli-x86_64-apple-darwin.tar.xz
+x64 Linux: https://github.com/gborough/roscal/releases/download/v0.1.0/roscal_cli-x86_64-unknown-linux-gnu.tar.xz
+Windows: https://github.com/gborough/roscal/releases/download/v0.1.0/roscal_cli-x86_64-pc-windows-gnu.tar.xz
 
 ## CLI User Manual
 
@@ -194,7 +204,7 @@ Options:
 The roscal library adopts the builder pattern to programmatically build OSCAL
 model files. You can find the official documentation here:
 
-
+https://docs.rs/roscal_lib/latest/roscal_lib/
 
 Example of building a minimal Catalog model:
 

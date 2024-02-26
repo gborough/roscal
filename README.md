@@ -11,7 +11,7 @@ This project aims to build a collection of toolings and libraries for
 Open Security Controls Assessment Language(OSCAL) developed by NIST in
 the Rust programming language ecosystem. One main focus of this project
 is to extend the capabilities of OSCAL model building via automated
-data gathering and seemless interactions that target a variety of systems,
+data gathering and seamless interactions that target a variety of systems,
 tasks such as gathering data from telemetry points, CI/CD pipelines, cloud
 infrastructures, version control systems etc. System implementations that rely
 on the security and control specification from OSCAL models should form a

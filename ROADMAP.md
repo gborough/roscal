@@ -8,7 +8,7 @@ contributions to the code base are welcome!
 
 ### Conversion and Normalisation
 
-There is a vast swathe of specialised security toolings such as DAST, SAST,
+There is a vast swathe of specialised security tools such as DAST, SAST,
 SCA, various scanners, audit and compliance checkers etc, each producing their
 own data schemas and output formats. As the adoption of OSCAL keeps rising,
 undoubtedly it will become one of the primary means of documenting and asserting
@@ -20,7 +20,7 @@ or how to parse Splunk output and build observation related blocks for Plan of
 Action and Milestones? These points are yet to be answered and warrants the
 following actions to be taken:
 
-- Liaise with companies that build these toolings and open up discussions on
+- Liaise with companies that build these tools and open up discussions on
 normalisation of data
 - Obtain advice and feedback from OSCAL end users on what they like to be
 implemented, find common ground amongst use cases that can be generalised and
@@ -43,8 +43,9 @@ such needs
 
 ### OSCAL Visualiser
 - Build a web application capable of inspecting, generating and editing OSCAL
-model files
+model files, focusing on non-tech user friendliness
 - Support building task lists, memos, action monitors and external references
+for staged model building
 
 ### Library and CLI
 - Support XML format?(This is uncertain given the amount of effort required
@@ -55,5 +56,5 @@ safeguarding
 ## Long Term Goals
 
 ### Automatic OSCAL Enforcement
-Why use OSCAL at all if the specified controls are not verifiable and enforceable
-automatically? This project will explore viable options to achieve this.
+- Documentation-as-Code style automatic security and control enforcement
+- Monitoring as well as integration with other existing solutions

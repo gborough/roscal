@@ -7,20 +7,24 @@
 
 ## Introduction
 
-This project aims to build a collection of toolings and libraries for
+This project aims to build a collection of tools and libraries for
 Open Security Controls Assessment Language(OSCAL) developed by NIST in
 the Rust programming language ecosystem. One main focus of this project
 is to extend the capabilities of OSCAL model building via automated
 data gathering and seamless interactions that target a variety of systems,
 tasks such as gathering data from telemetry points, CI/CD pipelines, cloud
-infrastructures, version control systems etc. System implementations that rely
-on the security and control specification from OSCAL models should form a
-tight feedback loop where evolving and relevant data also guides the process
-of producing and updating the models themselves in an automated fashion, thus
-allowing continuous security enforcement and better visibility into one's
-security posture.
+infrastructures, version control systems etc in order to aide the process
+of continuously OSCAL models updates and security posture monitoring.
 
-One major motivation for this project is to build toolings that are intended
+System implementations that rely on the security and control specification
+from OSCAL models should form a tight feedback loop where evolving and relevant
+data also guides the process of producing and updating the models themselves in
+an automated fashion, thus allowing continuous security enforcement and better
+visibility into one's security posture. The long term goal of this project is to
+achieve high level of automatic secruity and control enforcement based on OSCAL
+models in the Documentation-as-Code and Infrastructure-as-Code fashion.
+
+One major motivation for this project is to build tools that are intended
 to be used in environments where certain security mandates must be adhere to.
 There are unique advantages in using Rust not only for its memory and type safety
 characteristics, but also minimal system dependencies and high agility when

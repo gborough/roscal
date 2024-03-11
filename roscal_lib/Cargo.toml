@@ -23,7 +23,7 @@ lazy_static = "1.4.0"
 pulldown-cmark = "0.10.0"
 regex = "1.10.2"
 serde = { version = "1.0.197", features = ["derive"] }
-strum = { version = "0.26.1", features = ["derive"] }
+strum = { version = "0.26.2", features = ["derive"] }
 uriparse = "0.6.4"
 uuid = { version = "1.6.1", features = ["v4", "v5", "fast-rng", "serde"] }
 

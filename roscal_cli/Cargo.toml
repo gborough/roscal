@@ -23,7 +23,7 @@ serde_json = { version = "1.0.114", features = ["preserve_order"] }
 serde_yaml = "0.9.32"
 sha2 = "0.10.8"
 strum = { version = "0.26.2", features = ["derive"] }
-thiserror = "1.0.56"
+thiserror = "1.0.58"
 tokio = { version = "1.35.1", features = ["full"] }
 
 [dev-dependencies]

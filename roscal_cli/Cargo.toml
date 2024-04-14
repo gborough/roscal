@@ -15,7 +15,7 @@ roscal_lib = "0.1.0"
 
 anyhow = "1.0.82"
 clap = { version = "4.5.4", features = ["derive"] }
-chrono = { version = "0.4.35", features = ["serde"] }
+chrono = { version = "0.4.37", features = ["serde"] }
 iana-time-zone = "0.1.60"
 rand = "0.8.5"
 serde = { version = "1.0.197", features = ["derive"] }

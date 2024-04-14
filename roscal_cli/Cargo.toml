@@ -24,7 +24,7 @@ serde_yaml = "0.9.34"
 sha2 = "0.10.8"
 strum = { version = "0.26.2", features = ["derive"] }
 thiserror = "1.0.58"
-tokio = { version = "1.35.1", features = ["full"] }
+tokio = { version = "1.37.0", features = ["full"] }
 
 [dev-dependencies]
 assert_cmd = "2.0.14"

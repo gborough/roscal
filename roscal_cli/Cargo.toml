@@ -19,7 +19,7 @@ chrono = { version = "0.4.38", features = ["serde"] }
 iana-time-zone = "0.1.60"
 rand = "0.8.5"
 serde = { version = "1.0.197", features = ["derive"] }
-serde_json = { version = "1.0.115", features = ["preserve_order"] }
+serde_json = { version = "1.0.116", features = ["preserve_order"] }
 serde_yaml = "0.9.34"
 sha2 = "0.10.8"
 strum = { version = "0.26.2", features = ["derive"] }

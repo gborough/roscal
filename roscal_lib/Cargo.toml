@@ -20,7 +20,7 @@ chrono = { version = "0.4.38", features = ["serde"] }
 derivative = "2.2.0"
 derive_builder = "0.20.0"
 lazy_static = "1.4.0"
-pulldown-cmark = "0.10.2"
+pulldown-cmark = "0.10.3"
 regex = "1.10.4"
 serde = { version = "1.0.197", features = ["derive"] }
 strum = { version = "0.26.2", features = ["derive"] }

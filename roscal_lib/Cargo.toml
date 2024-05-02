@@ -22,7 +22,7 @@ derive_builder = "0.20.0"
 lazy_static = "1.4.0"
 pulldown-cmark = "0.10.2"
 regex = "1.10.4"
-serde = { version = "1.0.197", features = ["derive"] }
+serde = { version = "1.0.200", features = ["derive"] }
 strum = { version = "0.26.2", features = ["derive"] }
 uriparse = "0.6.4"
 uuid = { version = "1.8.0", features = ["v4", "v5", "fast-rng", "serde"] }

@@ -13,7 +13,7 @@ CLI For Open Security Controls Assessment Language In Rust
 [dependencies]
 roscal_lib = "0.1.0"
 
-anyhow = "1.0.82"
+anyhow = "1.0.83"
 clap = { version = "4.5.4", features = ["derive"] }
 chrono = { version = "0.4.38", features = ["serde"] }
 iana-time-zone = "0.1.60"

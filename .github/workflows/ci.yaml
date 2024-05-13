@@ -90,6 +90,9 @@ jobs:
         run: |
           sudo apt-get -y update
           sudo apt-get -y install npm
+
+      - name: Install quicktype
+        run: |
           npm install -g quicktype
 
       - name: Run clippy
@@ -117,6 +120,9 @@ jobs:
         run: |
           sudo apt-get -y update
           sudo apt-get -y install npm
+
+      - name: Install quicktype
+        run: |
           npm install -g quicktype
 
       - name: Run test

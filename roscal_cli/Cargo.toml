@@ -13,23 +13,23 @@ CLI For Open Security Controls Assessment Language In Rust
 [dependencies]
 roscal_lib = "0.1.0"
 
-anyhow = "1.0.82"
-clap = { version = "4.5.4", features = ["derive"] }
-chrono = { version = "0.4.38", features = ["serde"] }
-iana-time-zone = "0.1.60"
-rand = "0.8.5"
-serde = { version = "1.0.197", features = ["derive"] }
-serde_json = { version = "1.0.115", features = ["preserve_order"] }
-serde_yaml = "0.9.34"
-sha2 = "0.10.8"
-strum = { version = "0.26.2", features = ["derive"] }
-thiserror = "1.0.58"
-tokio = { version = "1.37.0", features = ["full"] }
+anyhow = { workspace = true }
+clap = { workspace = true }
+chrono = { workspace = true }
+iana-time-zone = { workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_yaml = { workspace = true }
+sha2 = { workspace = true }
+strum = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
 
 [dev-dependencies]
-assert_cmd = "2.0.14"
-tempfile = "3.10.1"
-walkdir = "2.5.0"
+assert_cmd = { workspace = true }
+tempfile = { workspace = true }
+walkdir = { workspace = true }
 
 [[bin]]
 name = "roscal"

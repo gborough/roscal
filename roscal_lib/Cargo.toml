@@ -16,25 +16,25 @@ publish = ["crates-io"]
 exclude = ["jsonschema/", "build.rs"]
 
 [dependencies]
-chrono = { version = "0.4.38", features = ["serde"] }
-derivative = "2.2.0"
-derive_builder = "0.20.0"
-lazy_static = "1.4.0"
-pulldown-cmark = "0.10.2"
-regex = "1.10.4"
-serde = { version = "1.0.197", features = ["derive"] }
-strum = { version = "0.26.2", features = ["derive"] }
-uriparse = "0.6.4"
-uuid = { version = "1.8.0", features = ["v4", "v5", "fast-rng", "serde"] }
+chrono = { workspace = true }
+derivative = { workspace = true }
+derive_builder = { workspace = true }
+lazy_static = { workspace = true }
+pulldown-cmark = { workspace = true }
+regex = { workspace = true }
+serde = { workspace = true }
+strum = { workspace = true }
+uriparse = { workspace = true }
+uuid = { workspace = true }
 
 [dev-dependencies]
-serde_json = "1.0.115"
-serde_yaml = "0.9.34"
+serde_json = { workspace = true }
+serde_yaml = { workspace = true }
 
 [build-dependencies]
-json-schema-diff = "0.1.7"
-prettyplease = "0.2.17"
-proc-macro2 = "1.0.80"
-serde_json = "1.0.115"
-syn = {version = "2.0.58", features = ["full"]}
-quote = "1.0.36"
+json-schema-diff = { workspace = true }
+prettyplease = { workspace = true }
+proc-macro2 = { workspace = true }
+quote = { workspace = true }
+serde_json = { workspace = true }
+syn = { workspace = true }

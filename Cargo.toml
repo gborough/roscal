@@ -41,7 +41,7 @@ strum = { version = "0.26.2", features = ["derive"] }
 syn = {version = "2.0.63", features = ["full"]}
 tempfile = "3.10.1"
 thiserror = "1.0.60"
-tokio = { version = "1.38.0", features = ["full"] }
+tokio = { version = "1.39.0", features = ["full"] }
 uriparse = "0.6.4"
 uuid = { version = "1.10.0", features = ["v4", "v5", "fast-rng", "serde"] }
 walkdir = "2.5.0"

@@ -32,7 +32,7 @@ proc-macro2 = "1.0.82"
 pulldown-cmark = "0.10.3"
 quote = "1.0.36"
 rand = "0.8.5"
-regex = "1.10.4"
+regex = "1.10.6"
 sha2 = "0.10.8"
 serde = { version = "1.0.201", features = ["derive"] }
 serde_json = { version = "1.0.117", features = ["preserve_order"] }

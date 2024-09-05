@@ -37,7 +37,7 @@ sha2 = "0.10.8"
 serde = { version = "1.0.201", features = ["derive"] }
 serde_json = { version = "1.0.117", features = ["preserve_order"] }
 serde_yaml = "0.9.34"
-strum = { version = "0.26.2", features = ["derive"] }
+strum = { version = "0.26.3", features = ["derive"] }
 syn = {version = "2.0.63", features = ["full"]}
 tempfile = "3.10.1"
 thiserror = "1.0.60"

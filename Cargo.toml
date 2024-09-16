@@ -18,7 +18,7 @@ pr-run-mode = "plan"
 allow-dirty = ["ci"]
 
 [workspace.dependencies]
-anyhow = "1.0.83"
+anyhow = "1.0.89"
 assert_cmd = "2.0.14"
 clap = { version = "4.5.4", features = ["derive"] }
 chrono = { version = "0.4.38", features = ["serde"] }

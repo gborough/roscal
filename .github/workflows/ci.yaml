@@ -10,7 +10,7 @@ on:
   pull_request:
 
 concurrency:
-  group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
+  group: "${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}"
   cancel-in-progress: true
 
 jobs:
@@ -18,11 +18,10 @@ jobs:
     name: Cargo format
     runs-on: ubuntu-latest
     steps:
-
       - name: Install toolchain
         uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: 1.76.0
+          toolchain: 1.81.0
           components: rustfmt
 
       - name: Checkout source
@@ -40,11 +39,10 @@ jobs:
     name: Security check
     runs-on: ubuntu-latest
     steps:
-
       - name: Install toolchain
         uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: 1.76.0
+          toolchain: 1.81.0
           components: rustfmt
 
       - name: Checkout sources
@@ -71,11 +69,10 @@ jobs:
     name: Check clippy
     runs-on: ubuntu-latest
     steps:
-
       - name: Install toolchain
         uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: 1.76.0
+          toolchain: 1.81.0
           components: clippy
 
       - name: Checkout sources
@@ -102,11 +99,10 @@ jobs:
     name: Cargo test
     runs-on: ubuntu-latest
     steps:
-
       - name: Install stable toolchain
         uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: 1.76.0
+          toolchain: 1.81.0
 
       - name: Checkout sources
         uses: actions/checkout@v4

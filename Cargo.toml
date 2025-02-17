@@ -43,7 +43,7 @@ tempfile = "3.14.0"
 thiserror = "1.0.60"
 tokio = { version = "1.40.0", features = ["full"] }
 uriparse = "0.6.4"
-uuid = { version = "1.11.0", features = ["v4", "v5", "fast-rng", "serde"] }
+uuid = { version = "1.13.1", features = ["v4", "v5", "fast-rng", "serde"] }
 walkdir = "2.5.0"
 
 [profile.release]

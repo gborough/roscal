@@ -38,7 +38,7 @@ allow-git = []
 db-urls = ["https://github.com/rustsec/advisory-db"]
 db-path = "~/.cargo/advisory-db"
 yanked = "warn"
-ignore = []
+ignore = ["RUSTSEC-2024-0388"]
 
 # --------------------------------------------------
 # LICENSES

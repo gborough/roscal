@@ -39,7 +39,7 @@ serde_json = { version = "1.0.138", features = ["preserve_order"] }
 serde_yaml = "0.9.34"
 strum = { version = "0.26.3", features = ["derive"] }
 syn = {version = "2.0.63", features = ["full"]}
-tempfile = "3.14.0"
+tempfile = "3.17.1"
 thiserror = "1.0.60"
 tokio = { version = "1.40.0", features = ["full"] }
 uriparse = "0.6.4"

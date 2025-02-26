@@ -21,7 +21,7 @@ allow-dirty = ["ci"]
 anyhow = "1.0.96"
 assert_cmd = "2.0.16"
 clap = { version = "4.5.13", features = ["derive"] }
-chrono = { version = "0.4.39", features = ["serde"] }
+chrono = { version = "0.4.40", features = ["serde"] }
 derivative = "2.2.0"
 derive_builder = "0.20.0"
 iana-time-zone = "0.1.61"

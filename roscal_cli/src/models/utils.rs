@@ -7,7 +7,7 @@ use rand::{distributions::Alphanumeric, thread_rng, Rng};
 use sha2::{Digest, Sha256};
 
 pub(super) fn check_filename_len(path: impl AsRef<Path>) -> bool {
-    if path.as_ref().to_string_lossy().as_bytes().len() > 202 {
+    if path.as_ref().to_string_lossy().len() > 202 {
         eprintln!("File name is too long");
         return false;
     }

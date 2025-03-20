@@ -18,23 +18,23 @@ pr-run-mode = "plan"
 allow-dirty = ["ci"]
 
 [workspace.dependencies]
-anyhow = "1.0.96"
+anyhow = "1.0.97"
 assert_cmd = "2.0.16"
 clap = { version = "4.5.13", features = ["derive"] }
-chrono = { version = "0.4.39", features = ["serde"] }
+chrono = { version = "0.4.40", features = ["serde"] }
 derivative = "2.2.0"
 derive_builder = "0.20.0"
 iana-time-zone = "0.1.61"
 json-schema-diff = "0.1.7"
 lazy_static = "1.5.0"
 prettyplease = "0.2.31"
-proc-macro2 = "1.0.82"
+proc-macro2 = "1.0.94"
 pulldown-cmark = "0.10.3"
-quote = "1.0.38"
+quote = "1.0.40"
 rand = "0.8.5"
 regex = "1.11.1"
 sha2 = "0.10.8"
-serde = { version = "1.0.218", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
 serde_json = { version = "1.0.139", features = ["preserve_order"] }
 serde_yaml = "0.9.34"
 strum = { version = "0.26.3", features = ["derive"] }

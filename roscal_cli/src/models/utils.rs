@@ -3,7 +3,7 @@ use std::{fs::File, io::Read, path::Path};
 
 use anyhow::{Context, Result};
 use chrono::Utc;
-use rand::{distributions::Alphanumeric, thread_rng, Rng};
+use rand::{distr::Alphanumeric, rng, Rng};
 use sha2::{Digest, Sha256};
 
 pub(super) fn check_filename_len(path: impl AsRef<Path>) -> bool {
@@ -43,7 +43,7 @@ pub(super) fn gen_created_at() -> String {
 }
 
 pub(super) fn gen_rand() -> String {
-    thread_rng()
+    rng()
         .sample_iter(&Alphanumeric)
         .take(8)
         .map(char::from)

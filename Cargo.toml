@@ -19,7 +19,7 @@ allow-dirty = ["ci"]
 
 [workspace.dependencies]
 anyhow = "1.0.97"
-assert_cmd = "2.0.16"
+assert_cmd = "2.0.17"
 clap = { version = "4.5.13", features = ["derive"] }
 chrono = { version = "0.4.40", features = ["serde"] }
 derivative = "2.2.0"

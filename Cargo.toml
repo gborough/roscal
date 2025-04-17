@@ -31,7 +31,7 @@ prettyplease = "0.2.32"
 proc-macro2 = "1.0.94"
 pulldown-cmark = "0.10.3"
 quote = "1.0.40"
-rand = "0.9.0"
+rand = "0.9.1"
 regex = "1.11.1"
 sha2 = "0.10.8"
 serde = { version = "1.0.219", features = ["derive"] }

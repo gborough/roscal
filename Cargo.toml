@@ -33,7 +33,7 @@ pulldown-cmark = "0.10.3"
 quote = "1.0.40"
 rand = "0.9.1"
 regex = "1.11.1"
-sha2 = "0.10.8"
+sha2 = "0.10.9"
 serde = { version = "1.0.219", features = ["derive"] }
 serde_json = { version = "1.0.140", features = ["preserve_order"] }
 serde_yaml = "0.9.34"

@@ -26,7 +26,7 @@ jobs:
           components: rustfmt
 
       - name: Checkout source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup cache
         uses: Swatinem/rust-cache@v2
@@ -48,7 +48,7 @@ jobs:
           components: rustfmt
 
       - name: Checkout sources
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install cargo-deny
         run: cargo install cargo-deny --locked
@@ -79,7 +79,7 @@ jobs:
           components: clippy
 
       - name: Checkout sources
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup cache
         uses: Swatinem/rust-cache@v2
@@ -109,7 +109,7 @@ jobs:
           toolchain: 1.85.0
 
       - name: Checkout sources
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup cache
         uses: Swatinem/rust-cache@v2
